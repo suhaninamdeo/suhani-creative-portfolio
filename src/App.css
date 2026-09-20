@@ -33,11 +33,13 @@ button {
   color: #fff7ef;
 }
 
-/* ================= TOP BAR ================= */
+/* ========================================================= */
+/* TOP BAR */
+/* ========================================================= */
 
 .top-bar {
   position: absolute;
-  top: 34px;
+  top: 25px;
   left: 7%;
   right: 7%;
   z-index: 20;
@@ -46,9 +48,11 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
+  line-height: 1.35;
+
   color: #fff8f1;
 }
 
@@ -59,6 +63,8 @@ button {
 .top-bar span:nth-child(2) {
   text-align: center;
   color: #ffe2d8;
+  max-width: 400px;
+  justify-self: center;
 }
 
 .top-bar span:last-child {
@@ -66,15 +72,19 @@ button {
   color: #fff8f1;
 }
 
-/* ================= PAGE ================= */
+/* ========================================================= */
+/* PAGE */
+/* ========================================================= */
 
 .page {
   width: 100%;
   height: 100%;
-  padding: 90px 7% 80px;
+
+  padding: 115px 7% 105px;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   position: relative;
   overflow: hidden;
@@ -112,7 +122,9 @@ button {
   }
 }
 
-/* ================= DECOR ================= */
+/* ========================================================= */
+/* DECOR */
+/* ========================================================= */
 
 .decor {
   position: absolute;
@@ -120,30 +132,33 @@ button {
   opacity: 0.65;
   font-family: "Cormorant Garamond", serif;
   pointer-events: none;
+  z-index: 1;
 }
 
 .decor-one {
-  top: 11%;
+  top: 13%;
   right: 7%;
-  font-size: 75px;
+  font-size: 65px;
 }
 
 .decor-two {
   bottom: 8%;
   left: 5%;
-  font-size: 70px;
+  font-size: 60px;
 }
 
-/* ================= COVER ================= */
+/* ========================================================= */
+/* COVER PAGE */
+/* ========================================================= */
 
 .cover-content {
   width: 100%;
-  height: 100%;
+  max-height: calc(100vh - 220px);
 
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  gap: 60px;
+  gap: 45px;
 
   position: relative;
   z-index: 2;
@@ -160,17 +175,17 @@ button {
 }
 
 .small-heading {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
-  font-size: 22px;
-  letter-spacing: 6px;
+  font-size: 18px;
+  letter-spacing: 5px;
 
   color: #ffe1d7;
 }
 
 .cover-left h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(80px, 11vw, 155px);
+  font-size: clamp(70px, 9vw, 135px);
   line-height: 0.72;
   font-weight: 500;
   letter-spacing: -5px;
@@ -184,27 +199,27 @@ button {
 }
 
 .role {
-  margin-top: 48px;
+  margin-top: 32px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 42px;
-  line-height: 1.08;
+  font-size: clamp(28px, 2.7vw, 36px);
+  line-height: 1.05;
 
   color: #fff8f1;
 }
 
 .quote {
   width: 100%;
-  max-width: 650px;
+  max-width: 560px;
 
-  margin-top: 28px;
+  margin-top: 18px;
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
 
-  font-size: 22px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.4;
 
   color: #ffe0d5;
 }
@@ -219,8 +234,8 @@ button {
 }
 
 .photo-frame {
-  width: 335px;
-  height: 425px;
+  width: 310px;
+  height: 395px;
 
   border: 5px solid #fff8f0;
   background: #64182b;
@@ -229,7 +244,7 @@ button {
 
   transform: rotate(2deg);
 
-  box-shadow: 16px 16px 0 rgba(60, 7, 22, 0.28);
+  box-shadow: 14px 14px 0 rgba(60, 7, 22, 0.28);
 }
 
 .hero-photo {
@@ -242,24 +257,28 @@ button {
   display: block;
 }
 
-/* ================= HEADINGS ================= */
+/* ========================================================= */
+/* HEADINGS */
+/* ========================================================= */
 
 .section-label {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 
   color: #f4b9b6;
 }
 
 h2 {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(65px, 8vw, 120px);
-  line-height: 0.78;
+
+  font-size: clamp(52px, 6vw, 88px);
+
+  line-height: 0.8;
   font-weight: 500;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 
   color: #fff8f1;
 }
@@ -269,7 +288,9 @@ h2 span {
   font-style: italic;
 }
 
-/* ================= ABOUT ================= */
+/* ========================================================= */
+/* ABOUT */
+/* ========================================================= */
 
 .content-page,
 .standard-page {
@@ -281,8 +302,10 @@ h2 span {
 .content-page {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 100px;
+  gap: 70px;
   align-items: center;
+
+  max-height: calc(100vh - 220px);
 }
 
 .heading-side {
@@ -290,34 +313,36 @@ h2 span {
 }
 
 .body-side {
-  max-width: 620px;
+  max-width: 600px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 34px;
-  line-height: 1.45;
+  font-size: 25px;
+  line-height: 1.35;
 
   color: #fff1e9;
 }
 
 .body-side p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .keyword-line {
-  margin-top: 35px;
+  margin-top: 25px;
 
   font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  letter-spacing: 3px;
+  font-size: 11px;
+  letter-spacing: 2.5px;
 
   color: #f2b5b3;
 }
 
-/* ================= SKILLS ================= */
+/* ========================================================= */
+/* SKILLS */
+/* ========================================================= */
 
 .number-list {
   max-width: 900px;
-  margin-top: 50px;
+  margin-top: 35px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -326,46 +351,48 @@ h2 span {
 }
 
 .number-item {
-  padding: 21px 15px;
+  padding: 16px 12px;
 
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 
   border-bottom: 1px solid rgba(255, 230, 220, 0.55);
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
+  font-size: 21px;
 
   color: #fff5ee;
 }
 
 .number-item small {
   font-family: "DM Sans", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
 
   color: #f0aaa9;
 }
 
-/* ================= CONTENT ================= */
+/* ========================================================= */
+/* CONTENT */
+/* ========================================================= */
 
 .tag-grid {
   max-width: 900px;
-  margin-top: 55px;
+  margin-top: 40px;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 10px;
 }
 
 .tag {
-  padding: 17px 24px;
+  padding: 13px 20px;
 
   border: 1px solid rgba(255, 225, 215, 0.65);
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
+  font-size: 20px;
 
   color: #fff4ec;
 
@@ -377,18 +404,20 @@ h2 span {
   color: #7e1d34;
 }
 
-/* ================= SERVICES ================= */
+/* ========================================================= */
+/* SERVICES */
+/* ========================================================= */
 
 .service-list {
   max-width: 850px;
-  margin-top: 40px;
+  margin-top: 28px;
 }
 
 .service-list div {
-  padding: 17px 5px;
+  padding: 13px 5px;
 
   display: grid;
-  grid-template-columns: 45px 1fr 30px;
+  grid-template-columns: 40px 1fr 30px;
   align-items: center;
 
   border-bottom: 1px solid rgba(255, 225, 215, 0.55);
@@ -397,41 +426,43 @@ h2 span {
 }
 
 .service-list small {
-  font-size: 12px;
+  font-size: 11px;
   color: #f0aaa9;
 }
 
 .service-list strong {
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .service-list span {
-  font-size: 22px;
+  font-size: 20px;
   color: #ffe5dc;
 }
 
-/* ================= TOOLS ================= */
+/* ========================================================= */
+/* TOOLS */
+/* ========================================================= */
 
 .tools-grid {
   max-width: 900px;
-  margin-top: 50px;
+  margin-top: 35px;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 12px;
 }
 
 .tool-card {
-  padding: 28px 12px;
+  padding: 22px 10px;
 
   text-align: center;
 
   border: 1px solid rgba(255, 225, 215, 0.65);
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
+  font-size: 21px;
 
   color: #fff4ec;
   background: rgba(255, 245, 238, 0.08);
@@ -446,12 +477,12 @@ h2 span {
 }
 
 /* ========================================================= */
-/* ================= PAGE 7 — VIDEOS ======================= */
+/* PAGE 7 — VIDEOS */
 /* ========================================================= */
 
 .work-page {
   width: 100%;
-  height: 100%;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -459,22 +490,20 @@ h2 span {
 }
 
 .work-page h2 {
-  font-size: clamp(55px, 6vw, 90px);
+  font-size: clamp(48px, 5vw, 72px);
   line-height: 0.8;
 }
-
-/* FIVE VIDEOS IN ONE LINE */
 
 .video-strip {
   width: 100%;
   max-width: 1450px;
 
-  margin: 28px auto 0;
+  margin: 24px auto 0;
 
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 
-  gap: 16px;
+  gap: 14px;
 
   align-items: start;
 }
@@ -489,7 +518,7 @@ h2 span {
 
 .video-card video {
   width: 100%;
-  height: min(53vh, 500px);
+  height: min(48vh, 450px);
 
   display: block;
 
@@ -499,18 +528,18 @@ h2 span {
 
   background: #64182b;
 
-  box-shadow: 7px 7px 0 rgba(60, 7, 22, 0.18);
+  box-shadow: 6px 6px 0 rgba(60, 7, 22, 0.18);
 
   border-radius: 0;
 }
 
 .video-card p {
-  margin-top: 9px;
+  margin-top: 7px;
 
   font-family: "DM Sans", sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 
   color: #ffe1d7;
 
@@ -519,40 +548,44 @@ h2 span {
 }
 
 .work-page .bottom-note {
-  margin-top: 15px;
+  margin-top: 11px;
 
-  font-size: 10px;
-  letter-spacing: 2.5px;
+  font-size: 9px;
+  letter-spacing: 2px;
 
   text-align: center;
 
   color: #f0aaa9;
 }
 
-/* ================= WHY ME ================= */
+/* ========================================================= */
+/* WHY ME */
+/* ========================================================= */
 
 .check-list {
   max-width: 800px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .check-list div {
-  padding: 15px 0;
+  padding: 11px 0;
 
   border-bottom: 1px solid rgba(255, 225, 215, 0.55);
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 27px;
+  font-size: 22px;
 
   color: #fff3eb;
 }
 
 .check-list span {
-  margin-right: 20px;
+  margin-right: 17px;
   color: #ffd1ca;
 }
 
-/* ================= CONTACT ================= */
+/* ========================================================= */
+/* CONTACT */
+/* ========================================================= */
 
 .contact-page {
   width: 100%;
@@ -567,10 +600,10 @@ h2 span {
 }
 
 .contact-description {
-  margin: 45px auto 30px;
+  margin: 32px auto 25px;
 
   font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.3;
 
   color: #fff0e8;
@@ -579,69 +612,73 @@ h2 span {
 .contact-page a {
   color: #fff5ed;
 
-  font-size: 28px;
+  font-size: 23px;
   text-decoration: none;
 
   border-bottom: 1px solid #f3bbb7;
 
-  padding-bottom: 6px;
+  padding-bottom: 5px;
 }
 
 .contact-social {
-  margin-top: 35px;
+  margin-top: 25px;
 
-  font-size: 13px;
-  letter-spacing: 4px;
+  font-size: 11px;
+  letter-spacing: 3px;
 
   color: #f2b2b0;
 }
 
-/* ================= BOTTOM TEXT ================= */
+/* ========================================================= */
+/* BOTTOM TEXT */
+/* ========================================================= */
 
 .bottom-left {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   left: 7%;
 
   z-index: 30;
 
-  font-size: 15px;
-  letter-spacing: 3px;
+  font-size: 12px;
+  letter-spacing: 2.5px;
 
   color: #ffe0d7;
 }
 
 .bottom-center {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   left: 50%;
 
   transform: translateX(-50%);
 
   z-index: 30;
 
-  font-size: 15px;
-  letter-spacing: 3px;
+  font-size: 12px;
+  letter-spacing: 2.5px;
 
   color: #ffe0d7;
 }
 
-/* ================= NAVIGATION ================= */
+/* ========================================================= */
+/* NAVIGATION */
+/* ========================================================= */
 
 .navigation {
   position: absolute;
   right: 7%;
-  bottom: 22px;
+  bottom: 17px;
 
   z-index: 40;
 
   display: flex;
-  gap: 10px;
+  gap: 9px;
 }
 
 .navigation button {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
 
   border-radius: 50%;
   border: 1px solid #f4c4bd;
@@ -649,7 +686,7 @@ h2 span {
   background: #fff8f1;
   color: #7e2036;
 
-  font-size: 22px;
+  font-size: 21px;
 
   cursor: pointer;
 
@@ -674,17 +711,18 @@ h2 span {
 }
 
 /* ========================================================= */
-/* ================= MOBILE ================================ */
+/* MOBILE */
 /* ========================================================= */
 
 @media (max-width: 800px) {
 
   .top-bar {
+    top: 20px;
     left: 6%;
     right: 6%;
 
-    font-size: 9px;
-    letter-spacing: 2px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
   }
 
   .top-bar span:nth-child(2) {
@@ -692,12 +730,17 @@ h2 span {
   }
 
   .page {
-    padding: 80px 6% 80px;
+    padding: 75px 6% 80px;
   }
 
+  /* COVER */
+
   .cover-content {
+    max-height: calc(100vh - 160px);
+
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 18px;
+
     text-align: center;
   }
 
@@ -706,54 +749,107 @@ h2 span {
   }
 
   .cover-left h1 {
-    font-size: 75px;
+    font-size: 65px;
   }
 
   .small-heading {
-    font-size: 12px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
   }
 
   .role {
-    margin-top: 35px;
-    font-size: 25px;
+    margin-top: 25px;
+    font-size: 22px;
   }
 
   .quote {
     margin-left: auto;
     margin-right: auto;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .photo-frame {
-    width: 200px;
-    height: 255px;
+    width: 175px;
+    height: 225px;
   }
+
+  /* ABOUT */
 
   .content-page {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 20px;
+
+    max-height: calc(100vh - 160px);
   }
 
   h2 {
-    font-size: 65px;
+    font-size: 52px;
   }
 
   .body-side {
-    font-size: 19px;
+    font-size: 17px;
   }
+
+  .keyword-line {
+    font-size: 8px;
+  }
+
+  /* SKILLS */
 
   .number-list {
     grid-template-columns: 1fr;
+    margin-top: 25px;
   }
+
+  .number-item {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  /* CONTENT */
+
+  .tag-grid {
+    margin-top: 25px;
+    gap: 7px;
+  }
+
+  .tag {
+    padding: 10px 14px;
+    font-size: 17px;
+  }
+
+  /* SERVICES */
+
+  .service-list {
+    margin-top: 20px;
+  }
+
+  .service-list div {
+    padding: 10px 3px;
+  }
+
+  .service-list strong {
+    font-size: 19px;
+  }
+
+  /* TOOLS */
 
   .tools-grid {
     grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    gap: 8px;
   }
 
-  /* PAGE 7 MOBILE */
+  .tool-card {
+    padding: 18px 8px;
+    font-size: 18px;
+  }
+
+  /* PAGE 7 */
 
   .work-page h2 {
-    font-size: 52px;
+    font-size: 46px;
   }
 
   .video-strip {
@@ -761,32 +857,61 @@ h2 span {
 
     grid-template-columns: repeat(5, minmax(0, 1fr));
 
-    gap: 5px;
+    gap: 4px;
 
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
   .video-card video {
-    height: 32vh;
+    height: 30vh;
 
     border-width: 1px;
 
-    box-shadow: 3px 3px 0 rgba(60, 7, 22, 0.18);
+    box-shadow: 2px 2px 0 rgba(60, 7, 22, 0.18);
   }
 
   .video-card p {
-    margin-top: 5px;
+    margin-top: 4px;
+
+    font-size: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .work-page .bottom-note {
+    margin-top: 7px;
 
     font-size: 6px;
     letter-spacing: 0.8px;
   }
 
-  .work-page .bottom-note {
-    margin-top: 10px;
+  /* WHY */
 
-    font-size: 7px;
-    letter-spacing: 1px;
+  .check-list {
+    margin-top: 20px;
   }
+
+  .check-list div {
+    padding: 9px 0;
+    font-size: 18px;
+  }
+
+  /* CONTACT */
+
+  .contact-description {
+    margin: 25px auto 20px;
+    font-size: 19px;
+  }
+
+  .contact-page a {
+    font-size: 18px;
+  }
+
+  .contact-social {
+    margin-top: 20px;
+    font-size: 9px;
+  }
+
+  /* BOTTOM */
 
   .bottom-center {
     display: none;
@@ -794,18 +919,22 @@ h2 span {
 
   .bottom-left {
     left: 7%;
-    bottom: 25px;
+    bottom: 22px;
 
-    font-size: 9px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
   }
+
+  /* NAVIGATION */
 
   .navigation {
     right: 6%;
-    bottom: 18px;
+    bottom: 15px;
   }
 
   .navigation button {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
   }
 }
